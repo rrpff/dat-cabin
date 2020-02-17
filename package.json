@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "browserify -t sheetify src/index.js -o dist/index.js",
+    "watch": "watchify -t sheetify src/index.js -o dist/index.js"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "sheetify": "^8.0.0",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "choo": "^7.1.0"
+  }
+}
